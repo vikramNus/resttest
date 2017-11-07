@@ -25,15 +25,7 @@ import javax.ws.rs.core.MediaType;
 public class testrestmethods extends HttpServlet {
     
   @Inject private ClientInstance client;
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+   
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
@@ -47,8 +39,7 @@ public class testrestmethods extends HttpServlet {
          String responsecode="1";
          
         if (null!=js)
-        {
-          
+        {         
             
             responsecode=js.getString("listid");
         }
